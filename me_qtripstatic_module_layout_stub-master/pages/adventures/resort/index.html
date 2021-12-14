@@ -1,35 +1,119 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>QTrip Adventure Detail</title>
    <link rel="stylesheet" href="../../../css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+   crossorigin="anonymous"
+ />
 </head>
-
-<body>
-   <!-- TODO: MODULE_ADVENTURE_DETAILS -->
-   <!-- 1. Copy navigation bar HTML from Landing page document -->
-
-   <div class="container">
-      <div class="content">
-          <!-- TOOD: MODULE_ADVENTURE_DETAILS -->
-          <!-- 1. Write the child elements as required. -->
-          <!-- 2. Remember to use .adventure-card and its related classes. -->
-
+<body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+  <!-- TODO: MODULE_ADVENTURE_DETAILS -->
+  <!-- 1. Copy navigation bar HTML from Landing page document -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light p-3 mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">QTrip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/adventures/index.html">Explore</a>
+          </li>
+        </ul>
       </div>
-   </div>
-   <footer>
-      <div class="container">© QTrip 2020</div>
-   </footer>
-
+    </div>
+  </nav>
+  <div class="container">
+    <div class="content">
+      <!-- TOOD: MODULE_ADVENTURE_DETAILS -->
+      <!-- 1. Write the child elements as required. -->
+      <!-- 2. Remember to use .adventure-card and its related classes. -->
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="adventure-detail-card mb-3">
+            <div class="row">
+              <div class="col-lg-8">
+                <img class="adventure-card-image" src="/assets/adventures/resort/resort1.jpg">
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <div>
+                  <img class="adventure-card-image pb-3" src="/assets/adventures/resort/resort2.jpg">
+                </div>
+                <div>
+                  <img class="adventure-card-image" src="/assets/adventures/resort/resort3.jpg">
+                </div>
+              </div>
+            </div>
+            <h1>Sunshine Resort</h1>
+            <p>Relax and unwind yourself</p>
+            <hr>
+            <h2>About the Experience</h2>
+            <p>Chairman’s Jade Resort is constructed in the most natural setting for a day out that pleases the
+              senses. The property is spread over eight acres of land with facilities for both indoor and outdoor
+              adventures. Get active in the pool with a game of water polo or try some archery. For the indoor sort,
+              there are a host of popular games and adventures. If that is not enticing enough head to the gymnasium!
+            </p>
+            <h3>Inclusions</h3>
+            <ul>
+              <li>Swimming pool access</li>
+              <li>Outdoor sports - Water Polo, Archery, Tennis, and Zorbing</li>
+              <li>Indoor games - Indoor Squash, Table Tennis, Carrom, Badminton, Chess, Billiards, and X-Box 360 KINECT
+              </li>
+              <li>Parking</li>
+            </ul>
+            <h3>Know before you go</h3>
+            <ul>
+              <li>Game accessories like balls and shuttlecocks will need to be purchased.</li>
+              <li>All adventures and game accessories are subject to availability.</li>
+              <li>Nylon swimwear must be worn at all times when using the swimming pool.</li>
+              <li>Children must be accompanied by parents or guardians at all times.</li>
+              <li>Complimentary entry for children below the height of three feet A valid photo ID is mandatory to enter
+                the resort.</li>
+            </ul>
+            <h3>Not included</h3>
+            <ul>
+              <li>Swimwear</li>
+              <li>Pickup and drop</li>
+              <li>Towel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="adventure-detail-card" id="reservation">
+            <h3>Sold Out!</h3>
+            <hr>This adventure is currently sold out. But there's a lot more to <a href="/pages/adventures/index.html" style="color:orange !important">explore.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!--Content-->
+</div>
+    <!-- copied over the footer from the landing page -->
+    <footer>
+      <div class="container">© QTrip 2021 
+      <div class="developer-author">
+        Developed By: 
+        <a href="https://dionnenoellabarretto.github.io/" tager="_blank"
+          >Dionne Noella Barretto</a
+        ></div></div>
+    </footer>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
 </body>
-
 </html>
