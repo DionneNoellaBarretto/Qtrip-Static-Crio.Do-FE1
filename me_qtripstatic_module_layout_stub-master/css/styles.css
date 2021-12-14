@@ -6,7 +6,6 @@ html,
 body {
   position: relative;
 }
-
 body {
   overflow-y: auto;
   min-height: 100vh;
@@ -19,127 +18,192 @@ a {
   color: inherit !important;
   text-decoration: none !important;
 }
+p>a{
+  color: orange !important;
+}
 footer {
   background: #f1f1f1;
   width: 100%;
-  padding: 16px 0px;
+  padding: 1rem 0rem;
   color: #999;
   vertical-align: bottom;
   margin-top: 40px;
-  text-align: center;
-  /* width: 100%; */
-  /* height: 2.5rem;   */
+  text-align: center; 
+  /* background-color: rgb(156, 197, 183); */
 }
-
+.developer-author:hover{
+font-size: larger;
+color: rgb(81, 32, 214);
+text-decoration: underline;
+cursor: pointer;
+}
 .banner {
   height: 500px;
   width: 100%;
   background: #999;
   margin: 20px 0px;
 }
-
 .content {
+  /* display: flex; 
+  flex-wrap: wrap; */
   padding: 20px 0px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
 }
-
+.row.display-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-']{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
 /* ================================== */
 /* Layout page CSS */
 /* ================================== */
-
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative;
+  height: 100%;
+  border-radius: 1rem;
 }
 .tile img {
+  
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  border-radius: 7px;
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
-}
-
+  filter: brightness(50%);
+  transform: scale(1.1);
+} 
+.tile-text>h5, .tile-text>p{
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+} 
 /* Hint: Notice the position:absolute and z-index properties. */
-/* Think about how those in relation to the existing "tile" classes. */
-.tile-text {
+/* Think about how those in relation to the existing "tile" classes. 
+.tile-text */
+.tile-text{
   position: absolute;
   z-index: 1;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  text-align: center;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  letter-spacing: 1px;
+  color: #fff;
 }
-
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("/assets/hero.jpg");
-
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
-  /* 2. Position and center the image to scale nicely on all screens. */
+  min-height: 50vh;
+  max-width: 100vw;
+  /*2. Position and center the image to scale nicely on all screens. */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
+.hero-heading {
+  font-size: 2rem;
+}
 .hero-subheading {
-  font-size: 24px;
+  font-size: 1.25rem;
   font-weight: 100;
+  padding: 0 1rem;
 }
 .hero-input {
   width: 80%;
   height: 50px;
-  padding: 16px;
+  padding: 0.5rem;
   border-radius: 8px;
   border: none;
 }
-
+.hero-input:focus {
+  outline: none;
+}
 .nav-link {
   margin-right: 36px;
 }
-
+/* navigation  
+.navbar{
+  background-color:rgb(26, 85, 85) !important;
+  color: ghostwhite;
+}
+.navbar .navbar-toggler {
+  border-color: white;
+} 
+.navbar .navbar-toggler:hover {
+  border-color: black;
+} 
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 243, 224, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} */
+.navbar .navbar-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(7, 11, 5, 0.93)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 /* ================================== */
 /* Adventures grid page CSS */
 /* ================================== */
-
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  border-radius: 8px;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 20rem;
+  object-fit: cover;
+  transition: 0.2s all;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
-
 /* ================================== */
 /* Adventure details page CSS */
 /* ================================== */
-
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
 }
-
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
 }
-
 @media only screen and (min-width: 768px) {
   /* For desktops phones: */
   #reservation {
-    width: 400px;
+    max-width: 350px;
     position: fixed;
   }
 }
